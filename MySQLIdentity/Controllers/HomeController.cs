@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using MySQLIdentity.Models;
 
@@ -12,17 +13,18 @@ namespace MySQLIdentity.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly workforceContext _workforceContext;
+        private IEmployeeRepository _employeeRepository;
+        //private readonly workforceContext _workforceContext;
 
-        public HomeController(ILogger<HomeController> logger, workforceContext workforceContext)
+        public HomeController(ILogger<HomeController> logger, IEmployeeRepository employeeRepository)
         {
             _logger = logger;
-            _workforceContext = workforceContext;
+            _employeeRepository = employeeRepository;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            return View(await _employeeRepository.Employees.ToListAsync()); //_workforceContext.Employee.ToListAsync()); ;
         }
 
         public IActionResult Privacy()

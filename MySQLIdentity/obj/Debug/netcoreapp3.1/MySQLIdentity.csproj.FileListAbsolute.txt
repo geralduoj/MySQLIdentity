@@ -2,7 +2,6 @@ C:\Users\Gerald\Documents\GitHub\MySQLIdentity\MySQLIdentity\bin\Debug\netcoreap
 C:\Users\Gerald\Documents\GitHub\MySQLIdentity\MySQLIdentity\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\Gerald\Documents\GitHub\MySQLIdentity\MySQLIdentity\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\Gerald\Documents\GitHub\MySQLIdentity\MySQLIdentity\bin\Debug\netcoreapp3.1\MySQLIdentity.exe
-C:\Users\Gerald\Documents\GitHub\MySQLIdentity\MySQLIdentity\obj\Debug\netcoreapp3.1\MySQLIdentity.csprojAssemblyReference.cache
 C:\Users\Gerald\Documents\GitHub\MySQLIdentity\MySQLIdentity\obj\Debug\netcoreapp3.1\MySQLIdentity.AssemblyInfoInputs.cache
 C:\Users\Gerald\Documents\GitHub\MySQLIdentity\MySQLIdentity\obj\Debug\netcoreapp3.1\MySQLIdentity.AssemblyInfo.cs
 C:\Users\Gerald\Documents\GitHub\MySQLIdentity\MySQLIdentity\obj\Debug\netcoreapp3.1\MySQLIdentity.RazorAssemblyInfo.cache
@@ -69,3 +68,4 @@ C:\Users\Gerald\Documents\GitHub\MySQLIdentity\MySQLIdentity\obj\Debug\netcoreap
 C:\Users\Gerald\Documents\GitHub\MySQLIdentity\MySQLIdentity\obj\Debug\netcoreapp3.1\MySQLIdentity.dll
 C:\Users\Gerald\Documents\GitHub\MySQLIdentity\MySQLIdentity\obj\Debug\netcoreapp3.1\MySQLIdentity.pdb
 C:\Users\Gerald\Documents\GitHub\MySQLIdentity\MySQLIdentity\obj\Debug\netcoreapp3.1\MySQLIdentity.genruntimeconfig.cache
+C:\Users\Gerald\Documents\GitHub\MySQLIdentity\MySQLIdentity\obj\Debug\netcoreapp3.1\MySQLIdentity.csprojAssemblyReference.cache
