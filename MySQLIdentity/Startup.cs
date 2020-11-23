@@ -27,7 +27,8 @@ namespace MySQLIdentity
         {
             services.AddControllersWithViews();
             services.AddTransient<MySqlConnection>(_ => new MySqlConnection(Configuration["ConnectionStrings:ConnectToWorkforceDB"]));
-            services.AddTransient<IEmployeeRepository, EFEmployeeRepository>();
+            //services.AddTransient<IEmployeeRepository, EFEmployeeRepository>();
+            services.AddSingleton<workforceContext>();
             //services.AddDbContext<workforceContext>(options => options.UseMySQL(Configuration.GetConnectionString("ConnectToWorkforceDB")));
         }
 

@@ -4,5 +4,28 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#empid</th>
+                <th scope="col">Name</th>
+                <th scope="col">Job Title</th>
+                <th scope="col">Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Employee emp in ViewBag.Emps)
+            {
+                <tr>
+                    <th scope="row">@emp.EmpId</th>
+                    <td>@emp.EmpName</td>
+                    <td>@emp.JobTitle</td>
+                    <td>@emp.Salary</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>

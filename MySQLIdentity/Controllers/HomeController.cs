@@ -14,17 +14,18 @@ namespace MySQLIdentity.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private IEmployeeRepository _employeeRepository;
-        //private readonly workforceContext _workforceContext;
+        private readonly workforceContext _workforceContext;
 
-        public HomeController(ILogger<HomeController> logger, IEmployeeRepository employeeRepository)
+        public HomeController(ILogger<HomeController> logger, workforceContext workforceContext)
         {
             _logger = logger;
-            _employeeRepository = employeeRepository;
+            _workforceContext = workforceContext;
         }
 
         public async Task<IActionResult> Index()
         {
-            return View(await _employeeRepository.Employees.ToListAsync()); //_workforceContext.Employee.ToListAsync()); ;
+            ViewBag.Emps = _workforceContext.Employee.ToList();
+            return View(await _workforceContext.Employee.ToListAsync()); //_workforceContext.Employee.ToListAsync()); ;
         }
 
         public IActionResult Privacy()
