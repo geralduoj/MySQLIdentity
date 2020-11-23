@@ -12,10 +12,12 @@ namespace MySQLIdentity.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly workforceContext _workforceContext;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, workforceContext workforceContext)
         {
             _logger = logger;
+            _workforceContext = workforceContext;
         }
 
         public IActionResult Index()
